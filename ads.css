@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0,0,0,0.35)
+    ),
+    url("images/Waysub2.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+
+/* Content Cards */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #27ae60;
+}
+em {
+    color: gray;
+}
+
+.video {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.video  h2 {
+    color: #27ae60;
+}
+
+/* FOOTER */
+footer {
+  background: #0a7d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo-way {
+  color: #2ecc71;   /* 绿色 */
+}
+
+.logo-sub {
+  color: #f1c40f;   /* 黄色 */
+}
+
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #00c853;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.4s ease;  /* 👈 滑动动画 */
+  z-index: 1000;
+}
+
+/* 收起来时 */
+.navbar.hide {
+  top: -100px;   /* 👈 往上藏 */
+}

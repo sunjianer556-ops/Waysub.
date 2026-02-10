@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waysub | About</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">
+  <span class="logo-way">Way</span><span class="logo-sub">Sub</span>
+</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ads.html">Advertisement</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+
+</div>
+
+<section>
+<!-- Details -->
+<div class="container">
+
+    <div class="card">
+<h2>About Waysub</h2>
+
+<p>
+Waysub is a fast-food restaurant that focuses on providing healthy and nutritious sandwiches
+for customers with busy lifestyles. We believe that fast food does not have to be unhealthy.
+</div>
+
+
+<div class="card">
+<h2>Why Choose Us</h2>
+<p>
+Why Choose Waysub
+
+At Waysub, we believe that fast food can also be healthy.
+Compared to other fast-food restaurants, we offer meals made with less processed ingredients and greater nutritional value, so you can enjoy your food with confidence.
+<h6>
+    <li>Freshly prepared sandwiches made every day</li>
+    <li>Customizable ingredients and sauces to match your preferences</li>
+    <li>Clear calorie and nutritional information for smarter choices</li>
+    <li>Fast and friendly service for your busy lifestyle</li>
+</h6>
+</div>
+</p>
+</section>
+
+<footer>
+    © 2026 Waysub | Johor Bahru, Malaysia
+</footer>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+      // 向下滑 → 藏起来
+      navbar.classList.add("hide");
+    } else {
+      // 向上滑 → 出现
+      navbar.classList.remove("hide");
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waysub | Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<nav class="navbar">
+ <div class="logo">
+  <span class="logo-way">Way</span><span class="logo-sub">Sub</span>
+</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ads.html">Advertisement</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+   
+</div>
+
+
+<h1>Contact Us</h1>
+
+<form>
+    <label>Name:</label><br>
+    <input type="text"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email"><br><br>
+
+    <label>Message:</label><br>
+    <textarea rows="4" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+
+
+<p><em>This contact form is a mock-up for educational purposes only.</em></p>
+
+<footer>
+    © 2026 Waysub | Johor Bahru, Malaysia
+</footer>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+      // 向下滑 → 藏起来
+      navbar.classList.add("hide");
+    } else {
+      // 向上滑 → 出现
+      navbar.classList.remove("hide");
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WaySub – Fresh & Fast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="navbar">
+<div class="logo">
+  <span class="logo-way">Way</span><span class="logo-sub">Sub</span>
+</div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ads.html">Advertisement</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO 广告区 -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Fresh. Fast. Healthy.</h1>
+    <p>Made Fresh Every Day</p>
+  </div>
+</section>
+
+<section>
+<!-- Details -->
+<div class="container">
+
+    <div class="card">
+        <h2>Welcome to Waysub</h2>
+        <p>
+        Waysub is a fast-food restaurant that specializes in freshly made sandwiches for busy individuals
+        who want quick yet healthy meals. We believe that fast food can also be nutritious, fresh,
+        and satisfying.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Our Mission</h2>
+        <p>
+        Our mission is to promote a healthy lifestyle by providing delicious, nutritious,
+        and convenient sandwiches. We aim to expand Waysub internationally so everyone
+        can enjoy healthier fast-food options.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>What Makes Us Different</h2>
+        <p>
+        Waysub provides clear calorie and nutritional information and uses less processed ingredients.
+        This allows customers to make better food choices while still enjoying great taste.
+        </p>
+        
+    </div>
+</section>
+
+<footer>
+  <p>© 2026 WaySub. Eat Fresh.</p>
+</footer>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+      // 向下滑 → 藏起来
+      navbar.classList.add("hide");
+    } else {
+      // 向上滑 → 出现
+      navbar.classList.remove("hide");
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+</body>
+</html>

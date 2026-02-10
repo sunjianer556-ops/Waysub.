@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waysub | Advertisement</title>
+    <link rel="stylesheet" href="ads.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="logo">
+  <span class="logo-way">Way</span><span class="logo-sub">Sub</span>
+</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="ads.html">Advertisement</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+
+</div>
+
+<div class="container">
+
+    <!-- Poster Section -->
+    <div class="card">
+        <h2>Poster Advertisement</h2>
+        <p>
+            This poster is designed to introduce Waysub as a healthy fast-food restaurant
+            that serves fresh and nutritious sandwiches for busy individuals.
+            The poster highlights our brand concept, popular menu items, and healthy lifestyle message.
+        </p>
+
+        <img src="images/Poster1.png" alt="Waysub Poster" width="500">
+
+         <p><em>
+            This poster advertisement is for educational purposes only.
+        </em></p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video">
+        <h2>Video Advertisement</h2>
+        <p>
+            This short video advertisement promotes Waysub’s healthy food concept.
+            It showcases our fresh ingredients, and commitment to providing
+            nutritious meals in a fast and convenient way.
+        </p>
+
+        <video width="700" autoplay loop muted playsinline>
+            <source src="videos/Roasted chicken, bulgogi chicken, bbq chicken, chicken teriyaki.......mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+   <p><em>
+            This video advertisement is for educational purposes only.
+        </em></p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Waysub | Johor Bahru, Malaysia
+</footer>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+      // 向下滑 → 藏起来
+      navbar.classList.add("hide");
+    } else {
+      // 向上滑 → 出现
+      navbar.classList.remove("hide");
+    }
+    lastScrollY = window.scrollY;
+  });
+</script>
+
+</body>
+</html>
